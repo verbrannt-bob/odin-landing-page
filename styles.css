@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color: #1f2937;
+    padding: 20px;
+    height: 30px;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h_logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9faf8;
+    margin-left: 200px;
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin-right: 200px;
+}
+
+.h_link{
+    font-size: 18px;
+    color: #e5e7eb;
+    text-decoration: none;
+}
