@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,10 +10,24 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.container_r{
+    display: flex;
+}
+
+.container_c{
+    display: flex;
+    flex-direction: column;
+}
+
+.width {
+    padding: 0 200px;
+    /* max-width: 1200px; */
+}
+
 .header {
     display: flex;
     background-color: #1f2937;
-    padding: 20px;
+    padding: 20px 200px;
     height: 30px;
     flex: 0 0 auto;
     justify-content: space-between;
@@ -23,18 +38,133 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #f9faf8;
-    margin-left: 200px;
 }
 
 ul{
     display: flex;
     gap: 25px;
     list-style: none;
-    margin-right: 200px;
 }
 
 .h_link{
-    font-size: 18px;
-    color: #e5e7eb;
     text-decoration: none;
 }
+
+.text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    flex: auto;
+    background-color: #1f2937;
+    gap: 50px;
+    padding: 100px 200px;
+}
+
+#main_left {
+    flex: 1 1;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+#main_title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.press {
+    font-weight: bold;
+    background-color: #3882f6;
+    color: white;
+    width: 115px;
+    height: 50px;
+    padding: 10px;
+    flex: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+#main_right {
+    min-height: 300px;
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+#image_placeholder {
+    background-color: grey;
+}
+
+.random {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    padding: 80px;
+}
+
+#r_title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin: auto;
+}
+
+#r_img_container {
+    gap: 70px;
+    justify-content: center;
+}
+
+.random_unit {
+    width: 155px;
+}
+
+.r_img {
+    width: 155px;
+    height: 155px;
+    border: 5px solid #3882f6;
+    border-radius: 10px;
+}
+
+.r_text {
+    text-align-last: center;
+    color: #1f2937;
+    padding: 5px;
+    
+}
+
+#quote {
+    background-color: #e5e7eb;
+}
+
+#q_textbox {
+    padding: 200px 450px;
+    gap: 5px;
+}
+
+#quote_text {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1f2937;
+}
+
+#quote_credit {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: right;
+    margin-right: 50px;
+}
+
+
+
+
+
